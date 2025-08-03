@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite' // here is the import
 import path from "path"
 
 // https://vite.dev/config/
-export default defineConfig(({ command, mode }) => ({
+export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/fmi/' : '/',
   plugins: [
     react(), 
