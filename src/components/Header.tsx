@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({
         {/* Left Column - Logo */}
         <div className="lg:w-[70%] header-left-column">
           <img 
-            src="/fmi/images/logo.svg" 
+            src={`${import.meta.env.BASE_URL}images/logo.svg`} 
             alt="Logo" 
             className="h-6 sm:h-6"
           />

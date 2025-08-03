@@ -116,7 +116,7 @@ const DataTable: React.FC<DataTableProps> = ({
                   <td className="px-4 py-3">
                     <div className="flex items-center justify-start">
                       <img 
-                        src={`/fmi/${community.builder.logo}`} 
+                        src={`${import.meta.env.BASE_URL}${community.builder.logo}`} 
                         alt={community.builder.name}
                         className="max-w-[180px] h-6 rounded"
                       />
