@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Filter, ChevronUp, ChevronDown } from 'lucide-react';
+import { Filter } from 'lucide-react';
 import { Wrapper } from '@googlemaps/react-wrapper';
 import type { Community, FilterState } from '../types/dashboard';
 
@@ -154,7 +154,7 @@ const MapPanel: React.FC<MapPanelProps> = ({
   filters,
   onFiltersChange
 }) => {
-  const [isMapCollapsed, setIsMapCollapsed] = useState(false);
+  const [isMapCollapsed] = useState(false);
   const states = ['Texas', 'Florida', 'California', 'Arizona'];
   const counties = {
     'Texas': ['Dallas County', 'Harris County', 'Travis County', 'Tarrant County'],

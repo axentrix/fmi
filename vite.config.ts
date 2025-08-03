@@ -5,6 +5,7 @@ import path from "path"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/fmi/',
   plugins: [
     react(), 
     tailwindcss()], // add that here and don't forget the import!
