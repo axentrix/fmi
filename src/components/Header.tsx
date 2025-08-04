@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ChevronDown } from 'lucide-react';
 
 interface HeaderProps {
   userTier: 'Basic' | 'Pro' | 'Intelligence';
@@ -45,10 +46,13 @@ const Header: React.FC<HeaderProps> = ({
             <div className="relative">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="w-[42px] h-[42px] bg-blue-600 rounded-full flex items-center justify-center text-white font-medium hover:bg-blue-700 transition-colors"
+                className="flex items-center gap-2 text-white hover:bg-blue-700 transition-colors"
                 aria-label="User menu"
               >
-                U
+                <div className="w-[42px] h-[42px] bg-blue-600 rounded-full flex items-center justify-center font-medium">
+                  U
+                </div>
+                <ChevronDown size={16} className="text-gray-600" />
               </button>
               
               {isDropdownOpen && (
