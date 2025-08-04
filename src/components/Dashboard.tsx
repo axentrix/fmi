@@ -10,7 +10,7 @@ const mockCommunities: Community[] = [
     id: '1',
     builder: {
       name: 'D.R. Horton',
-      logo: 'images/drhorton.jpg'
+      logo: 'images/drhorton.png'
     },
     community: {
       name: 'Sunset Meadows',

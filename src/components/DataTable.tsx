@@ -118,7 +118,7 @@ const DataTable: React.FC<DataTableProps> = ({
                       <img 
                         src={`${import.meta.env.BASE_URL}${community.builder.logo}`} 
                         alt={community.builder.name}
-                        className="max-w-[180px] h-6 rounded"
+                        className="max-w-[120px]   rounded"
                       />
                     </div>
                   </td>
